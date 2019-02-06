@@ -1,0 +1,48 @@
+
+body{
+  background-color: #003340;
+  font-family: 'ZCOOL KuaiLe';
+}
+
+h1{
+  font-family: 'ZCOOL KuaiLe';
+	font-weight: bold;
+	font-size: 85px;
+	color: #FFC300;	
+}
+
+.menu{  
+  height: 350px;
+  background-color: #0B6E89;
+  color: #FFC300;
+  font-size: 30px;
+  text-align:center;
+  margin-bottom: 10px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #095B72;
+}
+
+.flex-container > div {
+  background-color: #095B72;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  font-family: 'ZCOOL KuaiLe';
+}
+
+.footer{
+  height: 200px;
+  background-color: #0B6E89;
+  font-family: 'ZCOOL KuaiLe';
+	font-weight: bold;
+	font-size: 20px;
+	color: #001920;
+}
+
+
+  
