@@ -1,0 +1,38 @@
+header{
+    font-size: 35px;
+    height: 150px;
+    text-align: center;
+    background-color: #5D96AC;
+}
+
+.flex_cont{
+    background-color: #6DAFC9;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flex_cont > div{
+    background-color: white;
+    margin:0px auto;
+    padding: 40px;
+    font-size: 20px;
+    width:59%;
+    border-radius:10px;
+}
+
+#results{
+    width:20%;
+    position: sticky;
+    align-self: flex-start;
+    top:0;
+    padding: 50px;
+    font-size: 20px;
+    border-radius:10px;
+}
+#checker{
+    
+    background-color: lightBlue;
+    border-radius:10px;
+    width:200px;
+    height:100px;
+}

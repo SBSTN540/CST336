@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Concert Calander</title>
+        <link href="project2.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header><bold><br>Upcomming Concert Ticket Sales</bold></header>
+        <div class = "flex_cont">
+            <div id = "quiz">
+                <form>
+                    <div class="question1">
+                        <label for="feedback">1)Alvvays - May 13th<br/> Location: The Catalyst<br/>$25</label>
+                        <div class = "pic1"></div>
+                        <div>
+                            <input type ="radio" id = "choice1" name="nameChoice1" value = "1">
+                        </div>
+                        <div id="enterQuantity1">
+                        <div>Quantity:</div>
+                        <div><input type="number" id= "itemAmount1" name="quantity" style ="height:25px;width:200px; font-size:14pt;"/></div>
+                    </div>
+                    </div>
+                </form>
+                <br/>
+                <form>
+                    <div class="question2">
+                        <label for="feedback">2)Turnover - May 25<br/> Location: The Catalyst<br/>$20</label>
+                        <div class = "pic2"></div>
+                        <div>
+                            <input type="radio" id="choice2" name="nameChoice2" value= "2">
+                        </div>
+                        <div id="enterQuantity2">
+                        <div>Quantity:</div>
+                        <div><input type="number" id= "itemAmount2" name="quantity" style ="height:25px;width:200px; font-size:14pt;"/></div>
+                    </div>
+                    </div>
+                </form>
+                <br/>
+                <form>
+                    <div class="question3">
+                        <label for="feedback">3)DeafCult - April 14<br/> Location: The Catalyst<br/>$25</label>
+                        <div class = "pic3"></div>
+                        <div>
+                            <input type="radio" id="choice3" name="nameChoice3" value= "3">
+                        </div>
+                        <div id="enterQuantity3">
+                        <div>Quantity:</div>
+                        <div><input type="number" id= "itemAmount3" name="quantity" style ="height:25px;width:200px; font-size:14pt;"/></div>
+                    </div>
+                    </div>
+                <form>
+                <br/>
+                <div id="total">
+                </div>
+                <form>
+                  <div class="email">
+                      <label for="emailInput">Enter Email</label>
+                      <input type="text" name="enteredEmail">
+                  </div>
+                </form> 
+                <div>
+                    <button id ="checker" type="button">Submit</button>
+                </div>
+            </div>
+        </div>
+     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        
+        var conc1 = "1";
+        var conc2 = "2";
+        var conc3 = "3";
+        var concTotal = 0;
+        var selectedNameValue1 = "0";
+        var selectedNameValue2 = "0";
+        var selectedNameValue3 = "0";
+        var numOfTickets1 = 1;
+        var numOfTickets2 = 1;
+        var numOfTickets3 = 1;
+        
+        var totalCorrect = 0;
+        $("#total").html("Total: ").css("font-size", "30px").css("color","darkBlue").css("text-align", "left");
+            
+        $("button#checker").on("click", function(e) {
+
+            
+            var selectedRadio1 = $("input[name='nameChoice1']:checked");
+            selectedNameValue1 = selectedRadio1.val();
+
+            var selectedRadio2 = $("input[name='nameChoice2']:checked");
+            selectedNameValue2 = selectedRadio2.val();
+            
+            var selectedRadio3 = $("input[name='nameChoice3']:checked");
+            selectedNameValue3 = selectedRadio3.val();
+            
+            numOfTickets1 = $('#itemAmount1').val();
+            numOfTickets2 = $('#itemAmount2').val();
+            numOfTickets3 = $('#itemAmount3').val();
+
+            
+            if (selectedNameValue1 === conc1) {
+                $(".pic1").html("<img id = 'pic1' src = 'img/checkmark-png-17.png' />").css("display","inline");
+                $("#pic1").css("width","30px").css("height","30px");
+                concTotal += (25 * numOfTickets1);
+            }
+            
+            
+            if (selectedNameValue2 === conc2) {
+                $(".pic2").html("<img id = 'pic2' src = 'img/checkmark-png-17.png' />").css("display","inline");
+                $("#pic2").css("width","30px").css("height","30px");
+                concTotal += (20 * numOfTickets2);
+            }
+            
+            
+            //question 3
+            if (selectedNameValue3 === conc3) {
+                $(".pic3").html("<img id = 'pic3' src = 'img/checkmark-png-17.png' />").css("display","inline");
+                $("#pic3").css("width","30px").css("height","30px");
+                concTotal += (25 * numOfTickets3);
+            }
+            
+            
+            $("#total").html("EST Total: $"+ concTotal + "<br/>Taxes (15%): $" + Math.floor((concTotal)* 0.15) + "<br/>Grand Total: $" + (concTotal + Math.floor((concTotal)* 0.15)))
+                .css("color", "darkBlue")
+                .css("font-size","30px")
+                .css("width","20%").css("font-size","35px").css("color","darkBlue");
+            $("input[type=radio]").attr('disabled', true);
+            
+            var sEmail = $('#email').val();
+            if ($.trim(sEmail).length == 0) {
+                alert('Please enter valid email address');
+                e.preventDefault();
+            }
+            if (!validateEmail(sEmail)) {
+                alert('Invalid Email Address');
+                e.preventDefault();
+            }
+            
+            
+            document.getElementById("checker").disabled = true;});
+    </script>
+        
+    
+        
+    </body>
+</html>
