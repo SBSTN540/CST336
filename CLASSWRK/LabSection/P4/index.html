@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Cart</title>
+   
+    
+</head>
+    <style>
+        body{
+             text-align: center;
+        }
+        .checker{
+            background-color: #59E83F;
+            width:100px;
+            height:50px;
+            color:white;
+            font-size:18px;
+            border-radius:10px;
+        }
+        h1{
+            width :100%;
+            height:200px;
+            background-color: #CFCFCE;
+            
+        }
+        .block{
+            display:inline-flex;
+        }
+        table, th, td {
+          border: 1px solid black;
+             border-collapse: collapse;
+        }
+        table{
+            border: 1px solid black;
+            width:60%;
+        }
+    
+
+    </style>
+    
+<body>
+    
+    <h1> Spring Break Shopping  </h1>
+    <center>
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Unit <br> Price</th>
+            <th> Quantity </th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td>Microfiber Beach Towel</td>
+            <td>$30</td>
+            <td><input type="number" id = towel size="5"></td>
+            <td><div id = "towelTotal"></div></td>
+        </tr>
+    
+       <tr>
+            <td>Sunscreen 100SPF, 120ml</td>
+            <td>$10</td>
+            <td><input type="number" id = "sunscreen" size="5"></td>
+            <td><div id = "ssTotal"></div></td>
+            
+        </tr>    
+        
+        <tr>
+            <td>Ipanema Flip-flop Sandals </td>
+            <td>$20</td>
+            <td><input type="number" id = "flips" size="5"></td>
+            <td><div id = "flipsTotal"></div></td>
+            
+        </tr>
+    
+       <tr>
+            <td>Shipping</td>
+            <td></td>
+            <td></td>
+            <td id="shippingTotal"></td>
+        </tr>    
+            
+        <tr>
+            <td>Subtotal</td>
+            <td></td>
+            <td></td>
+            <td id="subtotal"></td>
+        </tr>             
+            
+        <tr>
+            <td>Tax (10%)</td>
+            <td></td>
+            <td></td>
+            <td id="tax"></td>
+        </tr>
+        
+        <tr>
+            <td>Total</td>
+            <td></td>
+            <td></td>
+            <td id="total"></td>
+        </tr>
+           
+    </table>
+    </center>
+    
+    
+    <h3>Shipping & Handling</h3>
+    <select id="shipping">
+        <option value="0">Select one</option>
+        <option value="1">Next-day Delivery: $15.00</option>
+        <option value="2">Three-day Delivery: $10.00</option>
+        <option value="3">Regular (5-8 days): $5.00</option>
+    </select>
+    <div id = "shippingChose"></div>
+    
+    <br><br>
+        
+    <button id = "calculate" type = "button" >Calculate Total</button>
+    <br>
+    <br> 
+    <span id = "accept">I accept the terms of this purchase. <input id  = "checkBox" type="checkbox" ></span>
+    <br> 
+    
+    <br/>
+    
+    <button id = "confirm" type = "button" >"CONFIRM PURCHASE"</button>
+    <div id = "thanks"></div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        
+        var towelAmt = 0;
+        var sunScreenAmt = 0;
+        var flipsAmt = 0;
+        var shippingAmt = 0;
+        var tax = 0;
+       
+        var total = 0;
+
+        $("button#calculate").on("click",function(e) {
+            if($("#shipping").val() == "0"){
+                   $("#shippingChose").html("A shipping option must be selected").css("color", "red"); 
+            }
+            
+            
+            total = 0;
+            towelAmt = $("#towel").val();
+            
+            total += (towelAmt * 30);
+            console.log(total);
+            
+            $("#towelTotal").html("$" + (towelAmt * 30));
+            
+            flipsAmt = $("#flips").val();
+            
+            total += (flipsAmt * 20);
+            console.log(total);
+            
+            $("#flipsTotal").html(flipsAmt * 20);
+
+            sunScreenAmt = $("#sunscreen").val();
+            
+            total += (sunScreenAmt * 10);
+            console.log(total);
+            
+            $("#ssTotal").html(sunScreenAmt * 10);
+
+            
+            
+            if($("#shipping").val() == "1"){
+                $("#shippingTotal").html("$15");
+                shippingAmt = 15;
+            }
+            if($("#shipping").val() == "2"){
+                $("#shippingTotal").html("$10");
+                shippingAmt = 10;
+            }
+            if($("#shipping").val() == "3"){
+                $("#shippingTotal").html("$5");
+                shippingAmt = 5;
+            }
+            tax = total * 0.1;
+            
+            $("#subtotal").html("$" + (shippingAmt + total));
+            $("#tax").html("$" + (tax));
+            total += tax + (shippingAmt + total);
+            $("#total").html("$" + (total));
+            
+        });
+         $("button#confirm").on("click",function(e) {
+             if($("#shipping").val() == "0"){
+                   console.log("asdfa");
+                   $("#shippingChose").html("A shipping option must be selected").css("color", "red"); 
+            }
+             if(!$("checkBox").prop('checked')){
+                $("#thanks").html("Thanks for your purchase").css("color", "green");
+                
+             }
+             else{
+                $("#accept").css("color","red"); 
+             }
+         });
+        
+    </script>
+
+</body>
+
+
+
+</html>
