@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Practice 5: Like/Dislike Video App</title>
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <style>
+      #infoBox{
+          
+          display:inline;
+          
+      }
+      
+  </style>
+</head>
+
+<body>
+
+  <!--Embed here any YouTube video using the "iframe" tag -->
+
+    <iframe width = "50%" height = 90%
+        src="https://www.youtube.com/embed/JbepN4dKLbU">
+    </iframe>
+    <br>
+    
+    <div id = "infoBox">
+        <button id="like">
+            <div id = "displayLiked"><img src="img/cancel_like.png" alt="Like button" width="35" onclick ="ajaxcall('like')"/></div>
+            <div id = "amountOfLikes"></div>
+        </button>
+        <button id="dislike">
+            <div id = "displayedDisliked"><img src="img/cancel_dislike.png" alt="disLike button" width="35" onclick = "ajaxcall('dislike')" /></div>
+            <div id = "amountOfdisLikes"></div>
+        </button>
+        
+    </div>
+  
+  <!--The number of likes is displayed within the span below-->
+  <span id="likes"></span>
+  
+
+</body>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+    
+    var liked = false;
+    var disliked = false;
+    function ajaxcall(action){
+        if(action  === 'like' && !liked){
+            $("#displayLiked").html("<img src='img/like.png' alt='Like button' width='35' onclick ='ajaxcall('like')'/>");
+            liked = true;
+        }
+        else if(action  === 'like' && liked){
+            $("#displayLiked").html("<img src='img/cancel_like.png' alt='Like button' width='35' onclick ='ajaxcall('like')'/>");
+            liked = false;
+        }
+        
+        if(action === 'dislike' && !disliked){
+            $("#displayedDisliked").html("<img src='img/dislike.png' alt='Like button' width='35' onclick ='ajaxcall('like')'/>");
+            disliked = true;
+        }
+        else if(action === 'dislike' && disliked){
+            $("#displayedDisliked").html("<img src='img/cancel_dislike.png' alt='Like button' width='35' onclick ='ajaxcall('like')'/>");
+            disliked = false;
+        }
+        $.ajax({
+                type: "get",
+                url: "https://cst336.herokuapp.com/projects/api/videoLikesAPI.php",
+                dataType: "json",
+                data: { "videoId": "JbepN4dKLbU",
+                        "action": action
+                },  //   <----AS THE VALUE, ENTER THE YOUTUBE VIDEO ID
+                
+                success: function(data,status) {
+                    $("#amountOfLikes").html(data.likes);
+                    $("#amountOfdisLikes").html(data.dislikes)
+                },
+                complete: function(data,status) { 
+                    //alert(status);
+                }
+        });
+    }  
+    $.ajax({
+        type: "get",
+        url: "https://cst336.herokuapp.com/projects/api/videoLikesAPI.php",
+        dataType: "json",
+        data: { "videoId": "JbepN4dKLbU"
+        },  //   <----AS THE VALUE, ENTER THE YOUTUBE VIDEO ID
+                
+        success: function(data,status) {
+        $("#amountOfLikes").html(data.likes);
+        $("#amountOfdisLikes").html(data.dislikes)
+        },
+        complete: function(data,status) { 
+            //alert(status);
+        }
+    });
+	
+    </script>
+</html>
