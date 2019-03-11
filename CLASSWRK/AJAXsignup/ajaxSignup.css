@@ -1,0 +1,26 @@
+
+
+
+body
+{
+    color: #F87474;
+    font-family: 'ZCOOL KuaiLe';
+	font-weight: bold;
+    text-align: center;
+    background-image: linear-gradient(#74F88D, #74F8C5);
+}
+
+form
+{
+    font-family: 'ZCOOL KuaiLe';
+    margin: 0 auto;
+    text-align: center;
+    color: #5D96AC;
+    background-image: linear-gradient(#DAF7A6, #74F8C5);  
+    width: 60%;
+}
+
+h1
+{
+     background-color: transparent;   
+}

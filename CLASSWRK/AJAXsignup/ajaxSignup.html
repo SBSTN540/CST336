@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="ajaxSignup.css" rel="stylesheet" type="text/css" />
+        <link href='https://fonts.googleapis.com/css?family=ZCOOL KuaiLe' rel='stylesheet'>
+        <title>AJAX: Sign Up Page</title>
+    </head>
+    <body>
+        <h1> Sign Up Form </h1>
+        <form>
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div><label>First Name:</label><input type="text"></div>
+                <div><label>Last Name:</label><input type="text"></div>
+                <div><label>Email:</label><input type="text"></div>
+                <div><label>Phone Number:</label><input type="text"></div>
+                <div><label>Zip Code:</label><input type="text"></div>
+                <div><label>City:</label></div>
+                <div><label>Latitude:</label></div>
+                <div><label>Longitude:</label></div>
+                <div><label>State: <input type="text" id="state" onchange="getCountyList()"</div>
+                <div><label>Select a County:</label><select></select></div>
+                <div><label>Desired Username:</label><input type="text"></div>
+                <div><label>Password:</label><input type="password"></div>
+                <div><label>Type Password Again:</label><input type="password"></div>
+                <div><input type="submit" value="Sign up!"></div>
+            </fieldset>
+          </form>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            
+            function getCountyList_jQuery() {        
+                $.ajax({
+                    type: "GET",
+                    url: "https://www.showdeolabs.com/cors?url=http://hosting.csumb.edu/laramiguel/ajax/countyList.php",
+                    dataType: "json",
+                    data: { "state": $("#state").val() },
+                    success: function(data,status) {
+                        $("#county").html("<option> Select One </option>");
+                        for (var i=0; i< data['counties'].length; i++){
+                        $("#county").append("<option>" + data["counties"][i].county + "</option>" );
+                    }
+                    },
+                      complete: function(data,status) {
+                        //optional, used for debugging purposes
+                        //console.log(status);
+                      }
+                });
+            
+            
+            
+            
+            
+        </script>
+    </body>
+</html>
