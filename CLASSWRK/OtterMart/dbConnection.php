@@ -15,7 +15,7 @@ function getDataBaseConnection($dbname = 'heroku_107660fec7f6777'){
             $password = $url["pass"];
         } 
     
-    $dbConn = PDO("mysql:host=$host;dbname=$dbname;",$username,$password);
+    $dbConn = new PDO("mysql:host=$host;dbname=$dbname;",$username,$password);
     $dbConn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     return $dbConn;
 }

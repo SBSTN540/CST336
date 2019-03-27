@@ -542,3 +542,83 @@
 [27-Mar-2019 20:31:02 UTC] PHP Stack trace:
 [27-Mar-2019 20:31:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php:0
 [27-Mar-2019 20:31:02 UTC] PHP   2. getDataBaseConnection() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php:4
+[27-Mar-2019 20:34:21 UTC] PHP Fatal error:  Call to undefined function PDO() in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php on line 18
+[27-Mar-2019 20:34:21 UTC] PHP Stack trace:
+[27-Mar-2019 20:34:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getCategories.php:0
+[27-Mar-2019 20:34:21 UTC] PHP   2. getDataBaseConnection() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getCategories.php:4
+[27-Mar-2019 20:37:27 UTC] PHP Fatal error:  Call to undefined function PDO() in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php on line 18
+[27-Mar-2019 20:37:27 UTC] PHP Stack trace:
+[27-Mar-2019 20:37:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getCategories.php:0
+[27-Mar-2019 20:37:27 UTC] PHP   2. getDataBaseConnection() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getCategories.php:4
+[27-Mar-2019 20:37:31 UTC] PHP Fatal error:  Call to undefined function PDO() in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php on line 18
+[27-Mar-2019 20:37:31 UTC] PHP Stack trace:
+[27-Mar-2019 20:37:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php:0
+[27-Mar-2019 20:37:31 UTC] PHP   2. getDataBaseConnection() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php:4
+[27-Mar-2019 20:37:32 UTC] PHP Fatal error:  Call to undefined function PDO() in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php on line 18
+[27-Mar-2019 20:37:32 UTC] PHP Stack trace:
+[27-Mar-2019 20:37:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php:0
+[27-Mar-2019 20:37:32 UTC] PHP   2. getDataBaseConnection() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php:4
+[27-Mar-2019 20:38:31 UTC] PHP Fatal error:  Call to undefined function PDO() in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php on line 18
+[27-Mar-2019 20:38:31 UTC] PHP Stack trace:
+[27-Mar-2019 20:38:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getCategories.php:0
+[27-Mar-2019 20:38:31 UTC] PHP   2. getDataBaseConnection() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getCategories.php:4
+[27-Mar-2019 20:38:35 UTC] PHP Fatal error:  Call to undefined function PDO() in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php on line 18
+[27-Mar-2019 20:38:35 UTC] PHP Stack trace:
+[27-Mar-2019 20:38:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php:0
+[27-Mar-2019 20:38:35 UTC] PHP   2. getDataBaseConnection() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php:4
+[27-Mar-2019 20:38:35 UTC] PHP Fatal error:  Call to undefined function PDO() in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php on line 18
+[27-Mar-2019 20:38:35 UTC] PHP Stack trace:
+[27-Mar-2019 20:38:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php:0
+[27-Mar-2019 20:38:35 UTC] PHP   2. getDataBaseConnection() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php:4
+[27-Mar-2019 20:38:36 UTC] PHP Fatal error:  Call to undefined function PDO() in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php on line 18
+[27-Mar-2019 20:38:36 UTC] PHP Stack trace:
+[27-Mar-2019 20:38:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php:0
+[27-Mar-2019 20:38:36 UTC] PHP   2. getDataBaseConnection() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php:4
+[27-Mar-2019 20:38:36 UTC] PHP Fatal error:  Call to undefined function PDO() in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php on line 18
+[27-Mar-2019 20:38:36 UTC] PHP Stack trace:
+[27-Mar-2019 20:38:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php:0
+[27-Mar-2019 20:38:36 UTC] PHP   2. getDataBaseConnection() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php:4
+[27-Mar-2019 20:38:36 UTC] PHP Fatal error:  Call to undefined function PDO() in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php on line 18
+[27-Mar-2019 20:38:36 UTC] PHP Stack trace:
+[27-Mar-2019 20:38:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php:0
+[27-Mar-2019 20:38:36 UTC] PHP   2. getDataBaseConnection() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php:4
+[27-Mar-2019 20:38:36 UTC] PHP Fatal error:  Call to undefined function PDO() in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php on line 18
+[27-Mar-2019 20:38:36 UTC] PHP Stack trace:
+[27-Mar-2019 20:38:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php:0
+[27-Mar-2019 20:38:36 UTC] PHP   2. getDataBaseConnection() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php:4
+[27-Mar-2019 20:38:37 UTC] PHP Fatal error:  Call to undefined function PDO() in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php on line 18
+[27-Mar-2019 20:38:37 UTC] PHP Stack trace:
+[27-Mar-2019 20:38:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php:0
+[27-Mar-2019 20:38:37 UTC] PHP   2. getDataBaseConnection() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php:4
+[27-Mar-2019 20:38:37 UTC] PHP Fatal error:  Call to undefined function PDO() in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php on line 18
+[27-Mar-2019 20:38:37 UTC] PHP Stack trace:
+[27-Mar-2019 20:38:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php:0
+[27-Mar-2019 20:38:37 UTC] PHP   2. getDataBaseConnection() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php:4
+[27-Mar-2019 20:38:37 UTC] PHP Fatal error:  Call to undefined function PDO() in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php on line 18
+[27-Mar-2019 20:38:37 UTC] PHP Stack trace:
+[27-Mar-2019 20:38:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php:0
+[27-Mar-2019 20:38:37 UTC] PHP   2. getDataBaseConnection() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php:4
+[27-Mar-2019 20:38:46 UTC] PHP Fatal error:  Call to undefined function PDO() in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php on line 18
+[27-Mar-2019 20:38:46 UTC] PHP Stack trace:
+[27-Mar-2019 20:38:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php:0
+[27-Mar-2019 20:38:46 UTC] PHP   2. getDataBaseConnection() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php:4
+[27-Mar-2019 20:38:55 UTC] PHP Fatal error:  Call to undefined function PDO() in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php on line 18
+[27-Mar-2019 20:38:55 UTC] PHP Stack trace:
+[27-Mar-2019 20:38:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php:0
+[27-Mar-2019 20:38:55 UTC] PHP   2. getDataBaseConnection() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php:4
+[27-Mar-2019 20:39:23 UTC] PHP Fatal error:  Call to undefined function PDO() in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php on line 18
+[27-Mar-2019 20:39:23 UTC] PHP Stack trace:
+[27-Mar-2019 20:39:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getCategories.php:0
+[27-Mar-2019 20:39:23 UTC] PHP   2. getDataBaseConnection() /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getCategories.php:4
+[27-Mar-2019 20:39:33 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'heroku_107660fec7f6777'' in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php(18): PDO->__construct('mysql:host=loca...', 'sbstnr', 'phpPass')
+#1 /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php(4): getDataBaseConnection()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php on line 18
+[27-Mar-2019 20:39:34 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'heroku_107660fec7f6777'' in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php(18): PDO->__construct('mysql:host=loca...', 'sbstnr', 'phpPass')
+#1 /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php(4): getDataBaseConnection()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php on line 18
