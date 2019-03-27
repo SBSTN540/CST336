@@ -15,9 +15,9 @@
                 <div><label>Last Name:</label><input type="text"></div>
                 <div><label>Email:</label><input type="text"></div>
                 <div><label>Phone Number:</label><input type="text"></div>
-                <div><label>Zip Code:</label><input type="text"></div>
+                <div><label>Zip Code:</label><input type="text" onchange = "resultOfZip"></div>
                 <div><label>City:</label></div>
-                <div><label>Latitude:</label></div>
+                <div><label id = "lat">Latitude:</label></div>
                 <div><label>Longitude:</label></div>
                 <div><label>State: <input type="text" id="state" onchange="getCountyList()"</div>
                 <div><label>Select a County:</label><select></select></div>
@@ -28,9 +28,7 @@
             </fieldset>
           </form>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-        <script type="text/javascript">
-            
-            function getCountyList_jQuery() {        
+        <script type="text/javascript">function getCountyList_jQuery() {        
                 $.ajax({
                     type: "GET",
                     url: "https://www.showdeolabs.com/cors?url=http://hosting.csumb.edu/laramiguel/ajax/countyList.php",
@@ -47,11 +45,32 @@
                         //console.log(status);
                       }
                 });
-            
-            
-            
-            
-            
-        </script>
+            function resultOfZip(){
+                $("#successful").html("");
+                $.ajax({
+                  type: "GET",
+                  url:"http://itcdland.csumb.edu/~milara/ajax/cityInfoByZip.php",
+                  dataType: "json",
+                  data:{
+                  "zip": $("#inputZip").val()
+                  },
+                  
+                  success: function(data, status){
+                    if(data === false){
+                      $("#invalidZip").html("Zip code not found");
+                    }
+                    else{
+                    $("#invalidZip").html("");
+                    $("#lat").html(data["latitude"]);
+                    $("#long").html(data["longitude"]);
+                    $("#displayCity").html(data["city"]);
+                    $("#displayState").val(data['state']);
+                    getCounties();
+                    // $("#displayCounty").text(data['county']);
+                    }
+                  }
+                });
+            }
+            </script>
     </body>
 </html>
