@@ -1,8 +1,6 @@
 <?php
 
-//bb48ad32ca15de:112ccc55@us-cdbr-iron-east-03.cleardb.net/heroku_107660fec7f6777?reconnect=true
 function getDataBaseConnection($dbname = 'heroku_107660fec7f6777'){
-
     $host = 'us-cdbr-iron-east-03.cleardb.net';
     $username = 'bb48ad32ca15de';
     $password = '112ccc55'; 

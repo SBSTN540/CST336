@@ -34,7 +34,6 @@
                             "orderBy" : $("[name=orderBy]:checked").val(),
                         },
                         success: function(data, status) {
-                            alert("function passed");
                             $("#results").html("<h3> Products Found: </h3>");
                             data.forEach(function(key) {
                                 $("#results").append("<a href='#' class='historyLink' id='" + key['productId'] + "'>History</a> ");
@@ -46,7 +45,6 @@
 
                 $(document).on('click', '.historyLink', function(){
                     $('#purchaseHistoryModal').modal("show");
-                    alert("phuck")
                     $.ajax({
                         type: "GET",
                         url: "api/getPurchaseHistory.php",

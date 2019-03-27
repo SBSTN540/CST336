@@ -622,3 +622,57 @@ Stack trace:
 #1 /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php(4): getDataBaseConnection()
 #2 {main}
   thrown in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php on line 18
+[27-Mar-2019 20:43:19 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'heroku_107660fec7f6777'' in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php(18): PDO->__construct('mysql:host=loca...', 'sbstnr', 'phpPass')
+#1 /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getCategories.php(4): getDataBaseConnection()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php on line 18
+[27-Mar-2019 20:43:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'heroku_107660fec7f6777'' in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php(18): PDO->__construct('mysql:host=loca...', 'sbstnr', 'phpPass')
+#1 /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php(4): getDataBaseConnection()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php on line 18
+[27-Mar-2019 20:43:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'heroku_107660fec7f6777'' in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php(18): PDO->__construct('mysql:host=loca...', 'sbstnr', 'phpPass')
+#1 /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php(4): getDataBaseConnection()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php on line 18
+[27-Mar-2019 20:43:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'heroku_107660fec7f6777'' in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php(18): PDO->__construct('mysql:host=loca...', 'sbstnr', 'phpPass')
+#1 /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php(4): getDataBaseConnection()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php on line 18
+[27-Mar-2019 20:43:34 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'heroku_107660fec7f6777'' in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php(18): PDO->__construct('mysql:host=loca...', 'sbstnr', 'phpPass')
+#1 /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php(4): getDataBaseConnection()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php on line 18
+[27-Mar-2019 20:44:07 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'heroku_107660fec7f6777'' in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php(18): PDO->__construct('mysql:host=loca...', 'sbstnr', 'phpPass')
+#1 /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getCategories.php(4): getDataBaseConnection()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php on line 18
+[27-Mar-2019 20:44:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'heroku_107660fec7f6777'' in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php(18): PDO->__construct('mysql:host=loca...', 'sbstnr', 'phpPass')
+#1 /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php(4): getDataBaseConnection()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php on line 18
+[27-Mar-2019 20:44:21 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'heroku_107660fec7f6777'' in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php(18): PDO->__construct('mysql:host=loca...', 'sbstnr', 'phpPass')
+#1 /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php(4): getDataBaseConnection()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php on line 18
+[27-Mar-2019 20:44:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'heroku_107660fec7f6777'' in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php(18): PDO->__construct('mysql:host=loca...', 'sbstnr', 'phpPass')
+#1 /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/api/getSearchResults.php(4): getDataBaseConnection()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/dbConnection.php on line 18
