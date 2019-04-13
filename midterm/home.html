@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href='https://fonts.googleapis.com/css?family=ZCOOL KuaiLe' rel='stylesheet'>
+
+        <title>Match @ Cinder</title>
+    </head>
+    <body>
+        <div>
+            <br>
+            <a href="home.html"><span style="text-align:center">Matches</span></a>
+            <a href="history.html"><span style="text-align:center">History</span></a>
+        </div>
+        <div id = "mainBox">
+          <div id = "userImg">
+          </div>
+          <div id = "userInfo">
+              <div id = "usrnm">
+              </div>
+              <dive id = "about">
+              </dive>
+          </div>
+        </div>
+        <div id = "userInput">
+            <button id = "like" onclick = "newMatch()">Like</buttton>
+            <button id = "meh" onclick = "newMatch()">Meh</button>
+            <button id = "dislike" onclick = "newMatch()">Dislike</button>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            var count = 0;
+             $(document).ready(function(){
+                    $.ajax({
+                        type: "GET",
+                        url: "api/getMatches.php",
+                        dataType: "json",
+                        success: function(data, status){
+                            $("#userImg").html("<img src='" + data[count]['picture_url'] + "' width='300px' /> <br />");
+                            $("#usrnm").html(data[count]['username']);
+                            $("#about").html(data[count]['about_me']);
+                        }
+                    });
+             });
+             function newMatch(){
+                    count++;
+                    $.ajax({
+                        type: "GET",
+                        url: "api/getMatches.php",
+                        dataType: "json",
+                        success: function(data, status) {
+                            if(data.length < count){
+                                count = data.length - 1;
+                                console.log("out of matches");
+                            }
+                            $("#userImg").html("<img src='" + data[count]['picture_url'] + "' width='300px' /> <br />");
+                            $("#usrnm").html(data[count]['username']);
+                            $("#about").html(data[count]['about_me']);
+                        }
+                    });
+                };
+        </script>
+    </body>
+</html>

@@ -54,7 +54,7 @@
                             if (data.length != 0) { // Checks if the API returned a non-empty list
                                 $("#history").html(""); //clears content
                                 $("#history").append(data[0]['productName'] + "<br />");
-                                $("#history").append("<img src='" + data[0]['productImage'] + "' width='200' /> <br />");
+                                
                                 data.forEach(function(key) {
                                     $("#history").append("Purchase Date: " + key['purchaseDate'] + "<br />");
                                     $("#history").append("Unit Price: " + key['unitPrice'] + "<br />");
