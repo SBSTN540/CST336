@@ -1,0 +1,15 @@
+[20-Apr-2019 07:02:08 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'hello57748'@'localhost' (using password: NO)' in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/login.php:47
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/login.php(47): PDO->__construct('mysql:host=loca...', 'hello57748', '')
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/login.php on line 47
+[20-Apr-2019 07:02:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'hello57748'@'localhost' (using password: NO)' in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/login.php:47
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/login.php(47): PDO->__construct('mysql:host=loca...', 'hello57748', '')
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/login.php on line 47
+[20-Apr-2019 07:02:21 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'hello57748'@'localhost' (using password: NO)' in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/login.php:47
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/login.php(47): PDO->__construct('mysql:host=loca...', 'hello57748', '')
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/login.php on line 47
