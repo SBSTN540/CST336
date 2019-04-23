@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href='https://fonts.googleapis.com/css?family=ZCOOL KuaiLe' rel='stylesheet'>
+        
+        <title>Liked</title>
+    </head>
+    <body>
+            <div class='menu'>
+                <br>
+                <h1><center>Lab 8</center></h1>
+                <br>
+                <a href="index.php"><span style="text-align:center">Home</span></a>
+            </div>
+
+          <div>
+            <!--<center>-->
+                <table id = 'table'>
+                </table>
+            <!--</center>-->
+          </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            var search = new Array();
+            var current;
+             $(document).ready(function(){
+                    $.ajax({
+                        type: "GET",
+                        url: "liked.php",
+                        dataType: "json",
+                        success: function(data, status){
+                            if (data.length == 0) { // Checks if the API returned a non-empty list
+                                $("#table").html("");//clears content
+                                search.length = 0;
+                            }
+                            search.length = 0;
+                            console.log(data);
+                            for (var i = 0; i < data.length; i++) {
+                                search[i] = data[i]['search'];
+                                $("#table").append("<tr> <td> <button type= 'button' id= '" + data[i]['search'] + "' value='" + i + "' onclick='view(value)'> "+ data[i]['search'] +" </input></td> </tr>");
+                            }
+                            
+                        } 
+                    });
+             }); 
+             
+             //function
+            function view(x)
+            {
+                current = parseInt(x);
+                console.log("view" + search)
+                $.ajax({
+                    type: "POST",
+                    url: "getLiked.php",
+                    dataType: "json",
+                    data: {
+                         "search" : search[current],
+                    },
+                    success: function(data, status){
+                        console.log("success");
+                        if (data.length == 0) { // Checks if the API returned a non-empty list
+                        $("#table").html("");
+                        return;
+                        }
+                        $("#table").html("");
+                        console.log(data)
+                        var id;
+                        var imageId;
+                        $("#table").append("<tr><td><center><button type = 'button' onclick= 'viewFavorites()'>back</button></center></td></tr>");
+                        for (var i = 0; i < data.length; i++) {
+                            id = "button" + i;
+                            imageId = "image" + i;
+                            $("#table").append("<tr> <td> <img src= '" + data[i]["image_src"] +  "' class= 'center' id=" + imageId + "> </td> <td> <input  type='image' src='images/favorite-on.png' id=" + id +  " class= 'favorite' value='" + i + "' onclick= 'likeUnlike(value)'> </td> </tr>");
+                        }
+                    }
+                });
+            }
+            
+            function likeUnlike(x)
+                {
+
+                    var id = "#button" + x;
+                    var pic = "#image" + x;
+                    // console.log($(id).attr('value'));
+                    if( $(id).attr("src") === "images/favorite-on.png")
+                    {
+                
+                        $(id).attr("src", "images/favorite.png");
+                        $.ajax({
+                        type: "POST",
+                        url: "remove.php",
+                        dataType: "json",
+                        data: {
+                             "image" : $(pic).attr('src'),
+                        },
+                        success: function(status){
+                            console.log("success");
+                        }
+                    });
+                        
+                    }
+                    else
+                    {
+                        $(id).attr("src", "images/favorite-on.png");
+                        $.ajax({
+                        type: "POST",
+                        url: "send.php",
+                        dataType: "json",
+                        data: {
+                             "search" : search[current],
+                             "image" : $(pic).attr('src'),
+                        },
+                        success: function(data, status){
+                            console.log("success");
+                        }
+                    });
+                    }
+                }
+            
+            
+            
+                function viewFavorites(){
+                     $.ajax({
+                        type: "GET",
+                        url: "liked.php",
+                        dataType: "json",
+                        success: function(data, status){
+                            if (data.length == 0) { // Checks if the API returned a non-empty list
+                                $("#table").html("");//clears content
+                                search.length = 0;
+                            }
+                            $("#table").html("");
+                            search.length = 0;
+                            console.log(data);
+                            for (var i = 0; i < data.length; i++) {
+                                search[i] = data[i]['search'];
+                                $("#table").append("<tr> <td> <button type= 'button' id= '" + data[i]['search'] + "' value='" + i + "' onclick='view(value)'> "+ data[i]['search'] +" </input></td> </tr>");
+                                
+                            }
+                            
+                        } 
+                    });
+                }
+        
+        </script>
+    </body>
+    
+    
+    
+    
+</html>

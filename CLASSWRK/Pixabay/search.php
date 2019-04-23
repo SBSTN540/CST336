@@ -4,7 +4,7 @@
 $cSession = curl_init();
 
 //step2
-curl_setopt($cSession,CURLOPT_URL,"https://pixabay.com/api/?key=5589438-47a0bca778bf23fc2e8c5bf3e&q=otter&image_type=photo&orientation=horizontal&safesearch=true&per_page=9");
+curl_setopt($cSession,CURLOPT_URL,"https://pixabay.com/api/?key=5589438-47a0bca778bf23fc2e8c5bf3e&q=" . $_GET['search'] . "&image_type=photo&orientation=horizontal&safesearch=true&per_page=9");
 curl_setopt($cSession,CURLOPT_RETURNTRANSFER,true);
 curl_setopt($cSession,CURLOPT_HEADER, false);
 

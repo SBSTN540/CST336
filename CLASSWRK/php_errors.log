@@ -13,3 +13,223 @@ Stack trace:
 #0 /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/login.php(47): PDO->__construct('mysql:host=loca...', 'hello57748', '')
 #1 {main}
   thrown in /home/ubuntu/workspace/CST336/CLASSWRK/OtterMart/login.php on line 47
+[23-Apr-2019 07:55:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '://pixabay.com/get/e83db70829fc013ed1584d05fb1d4393eb7ee6d611ac104490f6c179a1ecb' at line 2' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(14): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 14
+[23-Apr-2019 07:57:41 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '://pixabay.com/get/eb30b70d2ef51c22d2524518b749439eea73e1dd04b0144493f0c17fa5e8b' at line 2' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(14): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 14
+[23-Apr-2019 07:57:48 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' )' at line 2' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(14): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 14
+[23-Apr-2019 07:58:55 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+VALUES (ant, https://pixabay.com/get/e831b00b20f3043ed1584d05fb1d4393eb7ee6d61' at line 1' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(14): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 14
+[23-Apr-2019 07:59:01 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+VALUES (, )' at line 1' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(14): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 14
+[23-Apr-2019 08:16:52 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '://pixabay.com/get/e831b00b20f3043ed1584d05fb1d4393eb7ee6d611ac104490f6c179a0e9b' at line 2' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(14): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 14
+[23-Apr-2019 08:18:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' )' at line 2' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(14): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 14
+[23-Apr-2019 08:22:02 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' )' at line 2' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(14): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 14
+[23-Apr-2019 08:22:58 UTC] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 14
+[23-Apr-2019 08:22:58 UTC] PHP Stack trace:
+[23-Apr-2019 08:22:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:0
+[23-Apr-2019 08:22:58 UTC] PHP   2. PDOStatement->execute() /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:14
+[23-Apr-2019 08:23:00 UTC] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 14
+[23-Apr-2019 08:23:00 UTC] PHP Stack trace:
+[23-Apr-2019 08:23:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:0
+[23-Apr-2019 08:23:00 UTC] PHP   2. PDOStatement->execute() /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:14
+[23-Apr-2019 08:23:48 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '://pixabay.com/get/e831b00b20f3043ed1584d05fb1d4393eb7ee6d611ac104490f6c179a0e5b' at line 1' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(15): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 15
+[23-Apr-2019 08:24:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' )' at line 1' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(12): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 12
+[23-Apr-2019 08:25:13 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '://pixabay.com/get/eb34b60f2cf71c22d2524518b749439eea73e1dd04b0144493f0c17eaeedb' at line 1' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(12): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 12
+[23-Apr-2019 08:25:15 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' )' at line 1' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(12): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 12
+[23-Apr-2019 08:26:38 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '://pixabay.com/get/e831b00b20f3043ed1584d05fb1d4393eb7ee6d611ac104490f6c179a0e4b' at line 1' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(12): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 12
+[23-Apr-2019 08:32:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' )' at line 1' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(12): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 12
+[23-Apr-2019 08:34:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '://pixabay.com/get/ec34b20b21f11c22d2524518b749439eea73e1dd04b0144493f0c171a3e9b' at line 1' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(12): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 12
+[23-Apr-2019 08:34:14 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' )' at line 1' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(12): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 12
+[23-Apr-2019 08:35:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '://pixabay.com/get/e831b00b20f3043ed1584d05fb1d4393eb7ee6d611ac104490f6c179afe8b' at line 1' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(12): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 12
+[23-Apr-2019 08:36:59 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' )' at line 1' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(12): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 12
+[23-Apr-2019 08:39:05 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''search', 'image_src') VALUES (ant, https://pixabay.com/get/e831b00b20f3043ed158' at line 1' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(12): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 12
+[23-Apr-2019 08:39:08 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''search', 'image_src') VALUES (, )' at line 1' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(12): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 12
+[23-Apr-2019 08:41:02 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''search', 'image_src') VALUES (ant, https://pixabay.com/get/e831b00b20f3043ed158' at line 1' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(12): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 12
+[23-Apr-2019 08:42:15 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '://pixabay.com/get/e831b00b20f3043ed1584d05fb1d4393eb7ee6d611ac104490f6c179afe4b' at line 1' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(12): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 12
+[23-Apr-2019 08:45:57 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '://pixabay.com/get/e831b00b20f3043ed1584d05fb1d4393eb7ee6d611ac104490f6c179aeecb' at line 1' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(12): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 12
+[23-Apr-2019 08:49:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '://pixabay.com/get/e831b00b20f3043ed1584d05fb1d4393eb7ee6d611ac104490f6c179aeeeb' at line 1' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(12): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 12
+[23-Apr-2019 08:51:30 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '://pixabay.com/get/e831b00b20f3043ed1584d05fb1d4393eb7ee6d611ac104490f6c179aee9b' at line 1' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(12): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 12
+[23-Apr-2019 08:52:25 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '://pixabay.com/get/e834b3082ef1013ed1584d05fb1d4393eb7ee6d611ac104490f6c179aee9b' at line 1' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(12): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 12
+[23-Apr-2019 08:52:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' )' at line 1' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(12): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 12
+[23-Apr-2019 08:52:42 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '://pixabay.com/get/e834b20f2cfd063ed1584d05fb1d4393eb7ee6d611ac104490f6c179aee9b' at line 1' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(12): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 12
+[23-Apr-2019 18:46:47 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'DESTINCT' in 'field list'' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/liked.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/liked.php(10): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/liked.php on line 10
+[23-Apr-2019 18:46:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'DESTINCT' in 'field list'' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/liked.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/liked.php(10): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/liked.php on line 10
+[23-Apr-2019 18:50:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ant' in 'where clause'' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/getLiked.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/getLiked.php(14): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/getLiked.php on line 14
+[23-Apr-2019 18:58:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '://pixabay.com/get/e831b00b20f3043ed1584d05fb1d4393eb7ee6d611ac104490f6c17da2ecb' at line 2' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/remove.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/remove.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/remove.php on line 11
+[23-Apr-2019 18:58:39 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '://pixabay.com/get/e831b00b20f3043ed1584d05fb1d4393eb7ee6d611ac104490f6c17da2ecb' at line 2' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/remove.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/remove.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/remove.php on line 11
+[23-Apr-2019 19:22:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'search' cannot be null' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(12): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 12
+[23-Apr-2019 19:22:52 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'search' cannot be null' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(12): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 12
+[23-Apr-2019 19:25:29 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'search' cannot be null' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(12): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 12
+[23-Apr-2019 19:33:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'search' cannot be null' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(12): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 12
+[23-Apr-2019 19:33:42 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'search' cannot be null' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(12): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 12
+[23-Apr-2019 19:33:48 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'search' cannot be null' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(12): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 12
+[23-Apr-2019 19:33:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'search' cannot be null' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(12): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 12
+[23-Apr-2019 19:34:34 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'search' cannot be null' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(12): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 12
+[23-Apr-2019 19:34:41 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'search' cannot be null' in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(12): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 12

@@ -7,54 +7,103 @@
         <title>Pixabay Lab</title>
     </head>
     <body>
-        <div>
-            <!--<br>-->
-            <!--<a href="home.html"><span style="text-align:center">Matches</span></a>-->
-            <!--<a href="history.html"><span style="text-align:center">History</span></a>-->
-        </div>
-        <div id = "mainBox">
-          <div id = "img">
+            <div class='menu'>
+                <br>
+                <h1><center>Lab 8</center></h1>
+                <br>
+                <a href="liked.html"><span style="text-align:center">Liked</span></a>
+                <input type="text" id="search">
+                <button type='button' id='searchButton'>Search</button>
+            </div>
+
+          <div>
+            <!--<center>-->
+                <table id = 'table'>
+                </table>
+            <!--</center>-->
           </div>
-          <!--<div id = "userInfo">-->
-          <!--    <div id = "usrnm">-->
-          <!--    </div>-->
-          <!--    <dive id = "about">-->
-          <!--    </dive>-->
-          <!--</div>-->
-        </div>
-        <!--<div id = "userInput">-->
-        <!--    <button id = "like" onclick = "newMatch()">Like</buttton>-->
-        <!--    <button id = "meh" onclick = "newMatch()">Meh</button>-->
-        <!--    <button id = "dislike" onclick = "newMatch()">Dislike</button>-->
-        <!--</div>-->
+
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript">
-            var count = 0;
+            var search;
              $(document).ready(function(){
+                 
+                $("#searchButton").on("click", function(){
+                    if( $("#search").val() === ""){
+                        return;
+                    }
+                    search = $("#search").val();
+                    console.log(search)
                     $.ajax({
                         type: "GET",
-                        url: "qwerty.php",
+                        url: "search.php",
                         dataType: "json",
+                        data: {
+                             "search" : search,
+                        },
                         success: function(data, status){
                             if (data['hits'].length == 0) { // Checks if the API returned a non-empty list
-                            $("#img").html(""); //clears content
+                            $("#table").html(""); //clears content
                             }
+                            $("#table").html("");
                             console.log(data)
+                            var id;
+                            var imageId;
                             for (var i = 0; i < data.hits.length; i++) {
-                                $("#img").append("<img src= '" + data.hits[i]["largeImageURL"] +  "' class= 'center'>");
-                                $("#img").append("<button  ")
+                                id = "button" + i;
+                                imageId = "image" + i;
+                                $("#table").append("<tr> <td> <img src= '" + data.hits[i]["largeImageURL"] +  "' class= 'center' id=" + imageId + "> </td> <td> <input  type='image' src='images/favorite.png' id=" + id +  " class= 'favorite' value='" + i + "' onclick= 'likeUnlike(value)'> </td> </tr>");
                                 
                             }
-                            // data['hits'].forEach(function(key) {
-                            //     $("#img").append("<img src= '" + ["largeImageURL"] +  "'  /> <br />");
-                            // });
                             
                         } 
                     });
-             });
+                });
+             }); 
              
-             function 
+             //function
+            function likeUnlike(x)
+                {
+
+                    var id = "#button" + x;
+                    var pic = "#image" + x;
+                    // console.log($(id).attr('value'));
+                    if( $(id).attr("src") === "images/favorite.png")
+                    {
+                
+                        $(id).attr("src", "images/favorite-on.png");
+                        $.ajax({
+                        type: "POST",
+                        url: "send.php",
+                        dataType: "json",
+                        data: {
+                             "search" : search,
+                             "image" : $(pic).attr('src'),
+                        },
+                        success: function(status){
+                            console.log("success");
+                        }
+                    });
+                        
+                    }
+                    else
+                    {
+        
+                        $(id).attr("src", "images/favorite.png");
+                        $.ajax({
+                        type: "POST",
+                        url: "remove.php",
+                        dataType: "json",
+                        data: {
+                             "image" : $(pic).attr('src'),
+                        },
+                        success: function(data, status){
+                            console.log("success");
+                        }
+                    });
+                    }
+                }
         </script>
     </body>
     

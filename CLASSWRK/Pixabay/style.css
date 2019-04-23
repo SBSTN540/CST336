@@ -5,46 +5,67 @@ body
     font-family: 'ZCOOL KuaiLe';
 	font-weight: bold;
     text-align: center;
-    background-image: linear-gradient(#74F88D, #74F8C5);
+    background-image: linear-gradient(#FBEFEC, #22BDED);
     height:2160px;
 }
 
-#mainBox
-{
-    margin-top: 30px;
-    margin: 5% 20% 0% 20%;
-    font-family: 'ZCOOL KuaiLe';
-    text-align: center;
-    width: 60%;
-    height: 100%;
-    color: #5D96AC;
-    background-image: linear-gradient(#DAF7A6, #74F8C5);
-    display:flex;
-    flex-direction:row;
+.menu{  
+  height: 300px;
+  background-color: #22BDED;
+  color: #FFAB95;
+  font-size: 30px;
+  text-align:center;
+  margin-bottom: 10px;
 }
 
 
-#mainBox > div
-{
-    display:flex;
-    flex-direction:column;
-    text-align: center
-}
-
-/*#mainBox  img*/
+/*#img*/
 /*{*/
-     
+/*    display:flex;*/
+/*    flex-direction:column;*/
+/*    text-align: center*/
 /*}*/
+
+table {
+  margin-top: 30px;
+  margin: 5% 20% 0% 20%;
+  text-align: center;
+  /*width: */
+  height: 90%;
+  /*border: 3px solid #111B1A;*/
+  border-collapse: collapse;
+  background-image: linear-gradient(#22BDED, #FBEFEC);
+  
+  display:flex;
+  flex-wrap: wrap;
+}
+
+
+td{
+    margin-right: auto;
+    margin-left: auto;
+    width: 500px;
+}
+
+
 
 
 .center
 {
-  display: block;
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 30%;
+  max-width: 35%;
     
 }
+
+.favorite
+{
+    height: 15px;
+    width:  15px;
+    /*background-image: linear-gradient(#FBEFEC, #22BDED);*/
+}
+
     
 h1
 {
