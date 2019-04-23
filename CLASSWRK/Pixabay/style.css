@@ -1,4 +1,3 @@
-
 body
 {
     color: #F87474;
@@ -31,7 +30,7 @@ table {
   margin: 5% 20% 0% 20%;
   text-align: center;
   /*width: */
-  height: 90%;
+  height: 80%;
   /*border: 3px solid #111B1A;*/
   border-collapse: collapse;
   background-image: linear-gradient(#22BDED, #FBEFEC);
