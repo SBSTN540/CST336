@@ -233,3 +233,31 @@ Stack trace:
 #0 /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php(12): PDOStatement->execute(Array)
 #1 {main}
   thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Pixabay/send.php on line 12
+[01-May-2019 21:11:06 UTC] PHP Parse error:  syntax error, unexpected '[' in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/home.php on line 54
+[01-May-2019 21:18:07 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/home.php on line 53
+[01-May-2019 21:18:07 UTC] PHP Stack trace:
+[01-May-2019 21:18:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/Project5/home.php:0
+[01-May-2019 21:18:07 UTC] PHP   2. mysqli_fetch_array() /home/ubuntu/workspace/CST336/CLASSWRK/Project5/home.php:53
+[01-May-2019 21:37:01 UTC] PHP Warning:  log() expects parameter 1 to be double, string given in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/home.php on line 55
+[01-May-2019 21:37:01 UTC] PHP Stack trace:
+[01-May-2019 21:37:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/Project5/home.php:0
+[01-May-2019 21:37:01 UTC] PHP   2. log() /home/ubuntu/workspace/CST336/CLASSWRK/Project5/home.php:55
+[01-May-2019 21:37:01 UTC] PHP Warning:  log() expects parameter 1 to be double, string given in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/home.php on line 55
+[01-May-2019 21:37:01 UTC] PHP Stack trace:
+[01-May-2019 21:37:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/Project5/home.php:0
+[01-May-2019 21:37:01 UTC] PHP   2. log() /home/ubuntu/workspace/CST336/CLASSWRK/Project5/home.php:55
+[01-May-2019 21:37:01 UTC] PHP Warning:  log() expects parameter 1 to be double, string given in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/home.php on line 55
+[01-May-2019 21:37:01 UTC] PHP Stack trace:
+[01-May-2019 21:37:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/Project5/home.php:0
+[01-May-2019 21:37:01 UTC] PHP   2. log() /home/ubuntu/workspace/CST336/CLASSWRK/Project5/home.php:55
+[01-May-2019 21:37:55 UTC] PHP Parse error:  syntax error, unexpected 'image_src' (T_STRING) in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/home.php on line 55
+[01-May-2019 22:08:57 UTC] PHP Parse error:  syntax error, unexpected 'file' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/home.php on line 78
+[01-May-2019 22:10:02 UTC] PHP Parse error:  syntax error, unexpected 'file' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/home.php on line 78
+[01-May-2019 22:10:03 UTC] PHP Parse error:  syntax error, unexpected 'file' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/home.php on line 79
+[01-May-2019 22:10:06 UTC] PHP Parse error:  syntax error, unexpected 'file' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/home.php on line 79
+[01-May-2019 22:10:10 UTC] PHP Parse error:  syntax error, unexpected 'file' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/home.php on line 79
+[01-May-2019 22:10:28 UTC] PHP Parse error:  syntax error, unexpected 'file' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/home.php on line 79
+[01-May-2019 22:11:17 UTC] PHP Parse error:  syntax error, unexpected 'file' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/home.php on line 79
+[01-May-2019 22:15:03 UTC] PHP Parse error:  syntax error, unexpected 'file' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/home.php on line 83
+[01-May-2019 22:15:05 UTC] PHP Parse error:  syntax error, unexpected 'file' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/home.php on line 83
+[01-May-2019 22:15:06 UTC] PHP Parse error:  syntax error, unexpected 'file' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/home.php on line 83

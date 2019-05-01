@@ -1,0 +1,98 @@
+[01-May-2019 02:09:11 UTC] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH), expecting ',' or ';' in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php on line 7
+[01-May-2019 02:09:25 UTC] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH), expecting ',' or ';' in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php on line 7
+[01-May-2019 02:09:36 UTC] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH), expecting ',' or ';' in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php on line 7
+[01-May-2019 02:10:15 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting ',' or ';' in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php on line 8
+[01-May-2019 02:10:17 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting ',' or ';' in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php on line 8
+[01-May-2019 02:16:11 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting ',' or ';' in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php on line 8
+[01-May-2019 02:16:28 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting ',' or ';' in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php on line 8
+[01-May-2019 02:17:00 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php on line 26
+[01-May-2019 02:17:00 UTC] PHP Stack trace:
+[01-May-2019 02:17:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php:0
+[01-May-2019 02:17:00 UTC] PHP   2. reArrayFiles() /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php:5
+[01-May-2019 02:17:00 UTC] PHP   3. array_keys() /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php:26
+[01-May-2019 02:18:27 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php on line 26
+[01-May-2019 02:18:27 UTC] PHP Stack trace:
+[01-May-2019 02:18:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php:0
+[01-May-2019 02:18:27 UTC] PHP   2. reArrayFiles() /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php:5
+[01-May-2019 02:18:27 UTC] PHP   3. array_keys() /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php:26
+[01-May-2019 04:43:52 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image_src' cannot be null' in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php(22): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php on line 22
+[01-May-2019 04:49:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sprite.png' in 'field list'' in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php(22): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php on line 22
+[01-May-2019 04:50:10 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image_src' cannot be null' in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php(22): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php on line 22
+[01-May-2019 04:51:46 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image_src' cannot be null' in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php(22): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php on line 22
+[01-May-2019 04:58:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYCAYAAAC+ZpjcAAAgAElEQVR4nFy9W7YkS24sZgZEntbPvSQ' at line 1' in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php:25
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php(25): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php on line 25
+[01-May-2019 05:03:49 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYCAYAAAC+ZpjcAAAgAElEQVR4nFy9W7YkS24sZgZEntbPvSQ' at line 1' in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php:25
+Stack trace:
+#0 /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php(25): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php on line 25
+[01-May-2019 06:46:28 UTC] PHP Parse error:  syntax error, unexpected '>' in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/photoStream.php on line 11
+[01-May-2019 06:47:04 UTC] PHP Parse error:  syntax error, unexpected '>' in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/photoStream.php on line 11
+[01-May-2019 06:47:25 UTC] PHP Parse error:  syntax error, unexpected '>' in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/photoStream.php on line 11
+[01-May-2019 06:47:27 UTC] PHP Parse error:  syntax error, unexpected '>' in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/photoStream.php on line 11
+[01-May-2019 06:48:34 UTC] PHP Warning:  include(api/dbConn.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/photoStream.php on line 2
+[01-May-2019 06:48:34 UTC] PHP Stack trace:
+[01-May-2019 06:48:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/photoStream.php:0
+[01-May-2019 06:48:34 UTC] PHP Warning:  include(): Failed opening 'api/dbConn.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/photoStream.php on line 2
+[01-May-2019 06:48:34 UTC] PHP Stack trace:
+[01-May-2019 06:48:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/photoStream.php:0
+[01-May-2019 06:48:34 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/photoStream.php on line 4
+[01-May-2019 06:48:34 UTC] PHP Stack trace:
+[01-May-2019 06:48:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/photoStream.php:0
+[01-May-2019 06:48:36 UTC] PHP Warning:  include(api/dbConn.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/photoStream.php on line 2
+[01-May-2019 06:48:36 UTC] PHP Stack trace:
+[01-May-2019 06:48:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/photoStream.php:0
+[01-May-2019 06:48:36 UTC] PHP Warning:  include(): Failed opening 'api/dbConn.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/photoStream.php on line 2
+[01-May-2019 06:48:36 UTC] PHP Stack trace:
+[01-May-2019 06:48:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/photoStream.php:0
+[01-May-2019 06:48:36 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/photoStream.php on line 4
+[01-May-2019 06:48:36 UTC] PHP Stack trace:
+[01-May-2019 06:48:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/photoStream.php:0
+[01-May-2019 06:49:16 UTC] PHP Warning:  include(api/dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/photoStream.php on line 2
+[01-May-2019 06:49:16 UTC] PHP Stack trace:
+[01-May-2019 06:49:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/photoStream.php:0
+[01-May-2019 06:49:16 UTC] PHP Warning:  include(): Failed opening 'api/dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/photoStream.php on line 2
+[01-May-2019 06:49:16 UTC] PHP Stack trace:
+[01-May-2019 06:49:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/photoStream.php:0
+[01-May-2019 06:49:16 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/photoStream.php on line 4
+[01-May-2019 06:49:16 UTC] PHP Stack trace:
+[01-May-2019 06:49:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/photoStream.php:0
+[01-May-2019 06:49:25 UTC] PHP Warning:  include(api/dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/photoStream.php on line 2
+[01-May-2019 06:49:25 UTC] PHP Stack trace:
+[01-May-2019 06:49:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/photoStream.php:0
+[01-May-2019 06:49:25 UTC] PHP Warning:  include(): Failed opening 'api/dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/photoStream.php on line 2
+[01-May-2019 06:49:25 UTC] PHP Stack trace:
+[01-May-2019 06:49:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/photoStream.php:0
+[01-May-2019 06:49:25 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/photoStream.php on line 4
+[01-May-2019 06:49:25 UTC] PHP Stack trace:
+[01-May-2019 06:49:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/photoStream.php:0
+[01-May-2019 20:29:56 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php on line 19
+[01-May-2019 20:29:56 UTC] PHP Stack trace:
+[01-May-2019 20:29:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php:0
+[01-May-2019 20:29:56 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php:19
+[01-May-2019 20:43:24 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/photoStream.php on line 14
+[01-May-2019 20:43:25 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/photoStream.php on line 14
+[01-May-2019 20:44:37 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php on line 35
+[01-May-2019 20:44:37 UTC] PHP Stack trace:
+[01-May-2019 20:44:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php:0
+[01-May-2019 20:44:37 UTC] PHP   2. reArrayFiles() /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php:7
+[01-May-2019 20:44:37 UTC] PHP   3. array_keys() /home/ubuntu/workspace/CST336/CLASSWRK/Project5/api/uploadFile.php:35

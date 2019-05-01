@@ -1,13 +1,9 @@
 <?php
 
-function getDataBaseConnection($dbname = "ottermart"){
-        $host = "localhost";
-        $username = "sbstnr";
-        $password = "phpPass";
-    // $dbname = 'heroku_107660fec7f6777'
-    // $host = 'us-cdbr-iron-east-03.cleardb.net';
-    // $username = 'bb48ad32ca15de';
-    // $password = '112ccc55'; 
+function getDataBaseConnection($dbname = 'heroku_107660fec7f6777'){
+    $host = 'us-cdbr-iron-east-03.cleardb.net';
+    $username = 'bb48ad32ca15de';
+    $password = '112ccc55'; 
     
     if(strpos($_SERVER['HTTP_HOST'],'herokuapp')!==false){
             $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
@@ -23,4 +19,4 @@ function getDataBaseConnection($dbname = "ottermart"){
 }
 
 
-?> 
+?>
