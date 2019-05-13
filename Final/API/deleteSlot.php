@@ -1,0 +1,21 @@
+<?php
+$dbname = 'heroku_107660fec7f6777';
+$host = 'us-cdbr-iron-east-03.cleardb.net';
+$username = 'bb48ad32ca15de';
+$password = '112ccc55'; 
+      
+  
+// Get Data from DB
+$conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
+$id = $_GET['id'];
+
+$sql = "DELETE
+        FROM time_slot
+        WHERE id = '$id'";
+
+$stmt = $conn->prepare($sql);
+$stmt->execute();
+
+echo("Success");
+?>

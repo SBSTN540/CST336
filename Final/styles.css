@@ -1,0 +1,115 @@
+body{
+    font-family: 'ZCOOL KuaiLe';
+	font-weight: bold;
+	color: white;
+	font-size: 65px;
+	/*background-image: linear-gradient( #B9C7D0, #2E424D);*/
+}
+
+header{
+    height: 175px;
+    background-image: linear-gradient( to right, #C3F7FE, #1E7D8B);
+}
+
+
+
+#createButton{
+    font-family: 'ZCOOL KuaiLe';
+	font-weight: bold;
+    /*margin-top: 100px;*/
+    margin-left: 70%;
+    color: #E8F6FF;
+    background: #87EB74;
+    border: transparent;
+    border-radius: 10%;
+    height: 35px;
+    font-size: 15px;
+}
+
+
+#logout{
+    font-family: 'ZCOOL KuaiLe';
+	font-weight: bold;
+    margin-top: 100px;
+    margin-left: 70%;
+    color: #E8F6FF;
+    background: #87EB74;
+    border: transparent;
+    border-radius: 15%;
+    height: 35px;
+    font-size: 15px;
+}
+
+#table{
+    width:95%;
+    font-family: 'ZCOOL KuaiLe';
+	font-weight: bold;
+	font-size: 15px;
+	color: black;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    height:540px;
+    border: transparent; 
+    /*background-color: #87EB74;*/
+}
+
+
+
+#body{
+    /*height: 720px;*/
+    border:10px solid #87EB74;
+    
+}
+
+#end{
+    height:115px;
+    background:#1E7D8B;
+
+}    
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-image: linear-gradient( #B9C7D0, #2E424D);
+  
+}
+
+/* Modal Content */
+.modal-content {
+  /*background-color:white;*/
+  color: black;
+  font-size: 35px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width:80%;
+  /*height: px;*/
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+audio{
+    margin-left: 150px;
+}
